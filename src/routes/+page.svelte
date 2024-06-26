@@ -20,24 +20,27 @@
 			<h2 class="h2">Welcome to <strong>Villa Sunbeam.</strong></h2>
 		</div>
 
-		<!-- about section -->
-		 <div>
-			<h2 class="h2">About the Villa</h2>
+		<div class="flex flex-col justify-center max-w-[80%]">
+			<!-- about section -->
+				<h2 id="about" class="h2 my-8">About the Villa</h2>
+				<p class="text-left">Welcome to Villa Sunbeam, a charming 3-bedroom retreat nestled in the picturesque town of Peyia, Cyprus. This exquisite villa boasts a stunning view of the surrounding landscape, offering a serene escape for up to 6 guests. Enjoy the ultimate in relaxation with your own private swimming pool and an outdoor grill perfect for al fresco dining. Villa Sunbeam is the ideal destination for creating unforgettable memories with family and friends amidst the beauty of Cyprus. Book your stay today and experience the perfect blend of comfort and luxury.</p>
 
-			<p class="text-left">Welcome to Villa Sunbeam, a charming 3-bedroom retreat nestled in the picturesque town of Peyia, Cyprus. This exquisite villa boasts a stunning view of the surrounding landscape, offering a serene escape for up to 6 guests. Enjoy the ultimate in relaxation with your own private swimming pool and an outdoor grill perfect for al fresco dining. Villa Sunbeam is the ideal destination for creating unforgettable memories with family and friends amidst the beauty of Cyprus. Book your stay today and experience the perfect blend of comfort and luxury.</p>
+			<!-- image carousel -->
+			 <div id="images">
+				<h2 class="h2 my-8">Images</h2>
+				<Carousel />
+			</div>
+
+			<!-- availability -->
+			 <div id="availability" class="flex flex-col">
+				<h2 class="h2 my-8">Availability</h2>
+				<Calendar {disabledDates} />
+			</div>
+
+
+			<!-- location -->
+			<!-- <h2 class="h2 my-8">Location</h2> -->
+			<Map />
 		</div>
-
-		<!-- image carousel -->
-		<Carousel />
-
-		<!-- availability -->
-		<h2 class="h2">Availability</h2>
-		<Calendar {disabledDates} />
-
-
-
-		<!-- location -->
-		<h2 class="h2">Location</h2>
-		<Map />
 	</div>
 </div>

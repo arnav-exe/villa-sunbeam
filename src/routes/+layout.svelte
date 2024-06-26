@@ -19,27 +19,24 @@
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="/"
-					target="_blank"
+					href="#about"
 					rel="noreferrer"
 				>
 					About
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="/"
-					target="_blank"
+					href="#images"
 					rel="noreferrer"
 				>
 					Images
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="/"
-					target="_blank"
+					href="#availability"
 					rel="noreferrer"
 				>
-					Contact
+					Availability
 				</a>
 			</svelte:fragment>
 		</AppBar>
