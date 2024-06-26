@@ -3,6 +3,8 @@
 	import Calendar from "../lib/components/Calendar.svelte";
 	import Map from "../lib/components/Map.svelte";
 
+	import herobg from "../lib/images/hero-bg.jpg";
+
 	let disabledDates = [
 		new Date(2024, 4, 5), // 10th June 2024
 		new Date(2024, 4, 6), // 15th June 2024
@@ -24,7 +26,7 @@
 
 		<!-- hero section -->
 		<div class="relative w-screen h-screen flex justify-center items-center">
-			<div class="absolute bg-hero-bg inset-0 -z-20 blur"></div>
+			<img src="{herobg}" class="absolute inset-0 -z-20 blur" alt="hero background" />
 			<h2 class="h2">Welcome to <strong>Villa Sunbeam.</strong></h2>
 		</div>
 
