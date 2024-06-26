@@ -26,7 +26,7 @@
 
 		<!-- hero section -->
 		<div class="relative w-screen h-screen flex justify-center items-center">
-			<img src="{herobg}" class="absolute inset-0 -z-20 blur object-fit" alt="hero background" />
+			<img src="{herobg}" class="w-screen h-screen absolute inset-0 -z-20 blur object-cover" alt="hero background" />
 			<h2 class="h2">Welcome to <strong>Villa Sunbeam.</strong></h2>
 		</div>
 
