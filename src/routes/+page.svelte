@@ -4,8 +4,16 @@
 	import Map from "../lib/components/Map.svelte";
 
 	let disabledDates = [
-		new Date(2024, 5, 10), // 10th June 2024
-		new Date(2024, 5, 15)  // 15th June 2024
+		new Date(2024, 4, 5), // 10th June 2024
+		new Date(2024, 4, 6), // 15th June 2024
+		new Date(2024, 4, 7),
+		new Date(2024, 4, 8),
+		new Date(2024, 4, 9),
+		new Date(2024, 4, 10),
+		new Date(2024, 4, 11),
+		new Date(2024, 4, 12),
+		new Date(2024, 4, 13),
+		new Date(2024, 4, 14)
 	];
 </script>
 
