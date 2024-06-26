@@ -23,7 +23,7 @@
 	<div bind:this={imgCarousel} class="snap-x snap-center snap-mandatory scroll-smooth flex overflow-x-auto">
 		{#each {length: 25} as _, i}
 			<img
-				class="snap-center w-[1024px] rounded-container-token object-scale-down"
+				class="snap-center w-[1024px] rounded-container-token object-cover"
 				src="src/lib/images/({i+1}).webp"
 				alt="villa interior and exterior"
 				loading="lazy"

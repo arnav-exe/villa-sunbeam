@@ -24,7 +24,8 @@
 			<!-- about section -->
 				<h2 id="about" class="h2 my-8">About the Villa</h2>
 				<p class="text-left">Welcome to Villa Sunbeam, a charming 3-bedroom retreat nestled in the picturesque town of Peyia, Cyprus. This exquisite villa boasts a stunning view of the surrounding landscape, offering a serene escape for up to 6 guests. Enjoy the ultimate in relaxation with your own private swimming pool and an outdoor grill perfect for al fresco dining. Villa Sunbeam is the ideal destination for creating unforgettable memories with family and friends amidst the beauty of Cyprus. Book your stay today and experience the perfect blend of comfort and luxury.</p>
-
+				
+				<a class="h4 underline hover:text-primary-500" href="https://www.booking.com/hotel/cy/coral-bay-sunbeam-villa.en-gb.html">Book your stay now via Booking.com</a>
 			<!-- image carousel -->
 			 <div id="images">
 				<h2 class="h2 my-8">Images</h2>
