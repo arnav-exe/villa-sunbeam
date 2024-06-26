@@ -6,8 +6,8 @@
 	import herobg from "../lib/images/hero-bg.jpg";
 
 	let disabledDates = [
-		new Date(2024, 4, 5), // 10th June 2024
-		new Date(2024, 4, 6), // 15th June 2024
+		new Date(2024, 4, 5), // 5th May 2024
+		new Date(2024, 4, 6), // 6th May 2024
 		new Date(2024, 4, 7),
 		new Date(2024, 4, 8),
 		new Date(2024, 4, 9),
@@ -26,7 +26,7 @@
 
 		<!-- hero section -->
 		<div class="relative w-screen h-screen flex justify-center items-center">
-			<img src="{herobg}" class="absolute inset-0 -z-20 blur" alt="hero background" />
+			<img src="{herobg}" class="absolute inset-0 -z-20 blur object-fit" alt="hero background" />
 			<h2 class="h2">Welcome to <strong>Villa Sunbeam.</strong></h2>
 		</div>
 
