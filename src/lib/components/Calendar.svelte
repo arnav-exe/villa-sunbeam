@@ -23,7 +23,7 @@
 	}
 
 	const parseDate = dateString => {
-		let parts = dateString.split('/');
+		let parts = dateString.split("/");
 		let day = parseInt(parts[0], 10);
 		let month = parseInt(parts[1], 10) - 1; // Decrement by 2 for zero-based index and spreadsheet error
 		let year = parseInt(parts[2], 10);
@@ -49,7 +49,10 @@
 
 	const isDisabled = date => {
 		return getDatesFromRanges(disabledDates).some(
-			disabledDate => date.getFullYear() === disabledDate.getFullYear() && date.getMonth() === disabledDate.getMonth() && date.getDate() === disabledDate.getDate());
+			disabledDate => 
+				date.getFullYear() === disabledDate.getFullYear() &&
+				date.getMonth() === disabledDate.getMonth() &&
+				date.getDate() === disabledDate.getDate());
 	}
 
 	const updateMonth = offset => {
@@ -66,6 +69,13 @@
 		currentDate = new Date(currentYear, currentMonth, 1);
 		daysInMonth = getDaysInMonth(currentYear, currentMonth);
 	}
+
+	const isToday = date => {
+        let today = new Date();
+        return date.getFullYear() === today.getFullYear() && 
+               date.getMonth() === today.getMonth() && 
+               date.getDate() === today.getDate();
+    }
 
 	onMount(_ => {
 		daysInMonth = getDaysInMonth(currentYear, currentMonth);
@@ -90,7 +100,7 @@
 	</div>
 	<div class="grid grid-cols-7 gap-4">
 		{#each daysInMonth as day}
-			<div class="text-center p-2 rounded {isDisabled(day) ? "bg-error-100 text-error-500" : "bg-white"}">
+			<div class="text-center p-2 rounded {isDisabled(day) ? "bg-error-100 text-error-500" : "bg-white"} {isToday(day) ? "border-2 text-primary-500 border-primary-500" : ""}">
 				{day.getDate()}
 			</div>
 		{/each}
