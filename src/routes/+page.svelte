@@ -71,11 +71,22 @@
 		<div id="about" class="flex flex-col justify-center max-w-[80%]">
 			<!-- about section -->
 				<h2 class="h2 my-8">About the Villa</h2>
-				<p class="text-left">Welcome to Villa Sunbeam, a charming 3-bedroom retreat nestled in the picturesque town of Peyia, Cyprus. This exquisite villa boasts a stunning view of the surrounding landscape, offering a serene escape for up to 6 guests. Enjoy the ultimate in relaxation with your own private swimming pool and an outdoor grill perfect for al fresco dining. Villa Sunbeam is the ideal destination for creating unforgettable memories with family and friends amidst the beauty of Cyprus. Book your stay today and experience the perfect blend of comfort and luxury.</p>
+				<p class="text-left mb-6">Welcome to Villa Sunbeam, a charming 3-bedroom retreat nestled in the picturesque town of Peyia, Cyprus. This exquisite villa boasts a stunning view of the surrounding landscape, offering a serene escape for up to 6 guests. Enjoy the ultimate in relaxation with your own private swimming pool and an outdoor grill perfect for al fresco dining. Villa Sunbeam is the ideal destination for creating unforgettable memories with family and friends amidst the beauty of Cyprus. Book your stay today and experience the perfect blend of comfort and luxury.</p>
 				
-				<a class="h4 underline hover:text-primary-500" href="https://www.booking.com/hotel/cy/coral-bay-sunbeam-villa.en-gb.html">Book your stay now via Booking.com</a>
+				<h3 class="h3">Dining and Nightlife</h3>
+				<p class="text-left mb-6">Located just a short drive from the famous Coral Bay Strip, Villa Sunbeam gives you access to a vibrant array of bars and restaurants. Whether you're craving traditional Cypriot dishes or international cuisine, the Coral Bay Strip has something for everyone. Enjoy lively evenings with a mix of local and global flavors, perfect for any palate.</p>
+
+				<h3 class="h3">History and Culture</h3>
+				<p class="text-left mb-6">Immerse yourself in the rich history and culture of Cyprus. Explore nearby archaeological sites and historical landmarks that tell the story of this enchanting island. From ancient ruins to charming villages, every corner of Cyprus offers a glimpse into its fascinating past.</p>
+
+				<h3 class="h3">Tradition and Food</h3>
+				<p class="text-left mb-6">Cyprus is renowned for its warm hospitality and delicious cuisine. Indulge in local specialties like halloumi, souvlaki, and moussaka, paired with fine Cypriot wines. Experience traditional tavernas where the flavors of the Mediterranean come to life, making every meal a delightful adventure.</p>
+
+				<h3 class="h3">Book Your Stay</h3>
+				<p class="text-left mb-6">Experience the perfect blend of comfort, culture, and cuisine at Villa Sunbeam. <a class="font-bold underline hover:text-primary-500" href="https://www.booking.com/hotel/cy/coral-bay-sunbeam-villa.en-gb.html">Book your stay today</a> and discover the beauty and charm of Cyprus.</p>
+			
 			<!-- image carousel -->
-			 <div id="images">
+			<div id="images">
 				<h2 class="h2 my-8">Images</h2>
 				<Gallery />
 			</div>
