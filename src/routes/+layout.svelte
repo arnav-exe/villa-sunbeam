@@ -16,28 +16,30 @@
 			<svelte:fragment slot="lead">
 				<strong class="text-xl uppercase">Villa Sunbeam</strong>
 			</svelte:fragment>
-			<svelte:fragment slot="trail">
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="#about"
-					rel="noreferrer"
-				>
-					About
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="#images"
-					rel="noreferrer"
-				>
-					Images
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="#availability"
-					rel="noreferrer"
-				>
-					Availability
-				</a>
+			<svelte:fragment>
+				<div class="relative  flex w-full justify-center">
+					<a
+						class="btn btn-sm hover:text-primary-500"
+						href="#about"
+						rel="noreferrer"
+					>
+						About
+					</a>
+					<a
+						class="btn btn-sm hover:text-primary-500"
+						href="#images"
+						rel="noreferrer"
+					>
+						Images
+					</a>
+					<a
+						class="btn btn-sm hover:text-primary-500"
+						href="#availability"
+						rel="noreferrer"
+					>
+						Availability
+					</a>
+				</div>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
