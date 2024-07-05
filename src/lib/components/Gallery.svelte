@@ -21,26 +21,17 @@
 	import img20 from "../images/(20).webp";
 	import img21 from "../images/(21).webp";
 
-	let imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21];
+	// let imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21];
 
-	// let imgSet1 = [img1, img2, img3, img4, img5, img6, img7];
-	// let imgSet2 = [img8, img9, img10, img11, img12, img13, img14];
-	// let imgSet3 = [img15, img16, img17, img18, img19, img20, img21];
+	let imgSet1 = [img1, img2, img3, img4, img5, img6, img7];
+	let imgSet2 = [img8, img9, img10, img11, img12, img13, img14];
+	let imgSet3 = [img15, img16, img17, img18, img19, img20, img21];
 </script>
 
 
 
-<!-- regular gallery -->
-<section class="grid grid-cols-2 md:grid-cols-3 gap-4">
-	{#each imgs as i}
-		<div>
-			<img class="h-auto max-w-full rounded-lg" src="{i}" alt="villa interior and exterior" />
-		</div>
-	{/each}
-</section>
-
-<!-- masonry gallery (unused) -->
-<!-- <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- masonry gallery -->
+ <section class="grid grid-cols-2 md:grid-cols-3 gap-4">
 	<div class="grid gap-4">
 		{#each imgSet1 as i}
 			<img class="h-auto max-w-full rounded-lg" src="{i}" alt="">
@@ -56,4 +47,4 @@
 			<img class="h-auto max-w-full rounded-lg" src="{i}" alt="">
 		{/each}
 	</div>
-</div> -->
+</section>

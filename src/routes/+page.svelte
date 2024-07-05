@@ -1,9 +1,8 @@
 <script>
 	import Gallery from "../lib/components/Gallery.svelte";
 	import Calendar from "../lib/components/Calendar.svelte";
-	import Map from "../lib/components/Map.svelte";
 
-	import herobg from "../lib/images/hero-bg.jpg";
+	import herobg from "../lib/images/hero-bg.png";
 
 	let disabledDates = [
 		{
@@ -92,7 +91,7 @@
 			</div>
 
 			<!-- availability -->
-			 <div id="availability" class="flex flex-col mb-24">
+			 <div id="availability" class="flex flex-col">
 				<h2 class="h2 my-8">Availability</h2>
 				<Calendar {disabledDates} />
 				<div class="flex flex-row justify-end items-center">
@@ -103,8 +102,10 @@
 
 
 			<!-- location -->
-			<!-- <h2 class="h2 my-8">Location</h2> -->
-			<Map />
+			<div id="location" class="flex flex-col justify-center items-center mb-24">
+				<h2 class="h2 my-8">Location</h2>
+				<iframe class="rounded shadow-lg w-full aspect-video" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.1593412827256!2d32.37876927709577!3d34.85222337506543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e7098964ad1235%3A0xd9abcc7fc09a5956!2sVilla%20Sunbeam!5e0!3m2!1sen!2suk!4v1720207389921!5m2!1sen!2suk" title="Villa Location" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
 		</div>
 	</div>
 </div>

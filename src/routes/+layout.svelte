@@ -39,6 +39,13 @@
 					>
 						Availability
 					</a>
+					<a
+						class="btn btn-sm hover:text-primary-500"
+						href="#location"
+						rel="noreferrer"
+					>
+						Location
+					</a>
 				</div>
 			</svelte:fragment>
 		</AppBar>
