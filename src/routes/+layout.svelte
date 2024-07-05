@@ -17,7 +17,7 @@
 				<strong class="text-xl uppercase">Villa Sunbeam</strong>
 			</svelte:fragment>
 			<svelte:fragment>
-				<div class="relative  flex w-full justify-center">
+				<div class="sm:flex hidden relative w-full justify-center">
 					<a
 						class="btn btn-sm hover:text-primary-500"
 						href="#about"
