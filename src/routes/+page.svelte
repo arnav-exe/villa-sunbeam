@@ -83,13 +83,15 @@
 
 				<h4 class="h4">Book Your Stay</h4>
 				<p class="mt-2 mb-6">Experience the perfect blend of comfort, culture, and cuisine at Villa Sunbeam. <a class="font-bold underline hover:text-primary-500" href="https://www.booking.com/hotel/cy/coral-bay-sunbeam-villa.en-gb.html">Book your stay today</a> and discover the beauty and charm of Cyprus.</p>
-			
+
+
 			<!-- image carousel -->
 			<div id="images">
 				<h2 class="h2 my-8">Images</h2>
 				<Gallery />
 			</div>
 
+			
 			<!-- availability -->
 			 <div id="availability" class="flex flex-col">
 				<h2 class="h2 my-8">Availability</h2>
