@@ -38,6 +38,10 @@
 			"end": "22/08/2024"
 		},
 		{
+			"start": "27/08/2024",
+			"end": "03/09/2024"
+		},
+		{
 			"start": "04/09/2024",
 			"end": "12/09/2024"
 		},
@@ -46,8 +50,8 @@
 			"end": "23/09/2024"
 		},
 		{
-			"start": "27/09/2024",
-			"end": "04/10/2024"
+			"start": "26/09/2024",
+			"end": "06/10/2024"
 		},
 		{
 			"start": "06/10/2024",
@@ -90,6 +94,8 @@
 				<h2 class="h2 my-8">Images</h2>
 				<Gallery />
 			</div>
+
+			<h4 class="h4 my-8">Receive a <strong>10% discount</strong> if you book with us at: <a class="underline hover:text-primary-500" href="mailto:support@villasunbeam.com?subject=Villa%20Sunbeam%20Booking">support@villasunbeam.com</a></h4>
 
 			
 			<!-- availability -->
