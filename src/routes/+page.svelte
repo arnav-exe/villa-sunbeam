@@ -58,7 +58,9 @@
 			"end": "13/10/2024"
 		}
 	];
-</script>
+
+	let monthPrices = ["-", "-", "-", "170", "190", "200", "260", "270", "200", "180", "-", "-"]
+	</script>
 
 
 
@@ -95,18 +97,18 @@
 				<Gallery />
 			</div>
 
-			<h4 class="h4 my-8">Receive a <strong>10% discount</strong> if you book with us at: <a class="underline hover:text-primary-500" href="mailto:support@villasunbeam.com?subject=Villa%20Sunbeam%20Booking">support@villasunbeam.com</a></h4>
-
 			
 			<!-- availability -->
 			 <div id="availability" class="flex flex-col">
 				<h2 class="h2 my-8">Availability</h2>
-				<Calendar {disabledDates} />
+				<Calendar {disabledDates} {monthPrices} />
 				<div class="flex flex-row justify-end items-center">
 					<div class="m-2 bg-error-100 w-10 h-10 rounded" />
 					<p> = unavailable</p>
 				</div>
 			</div>
+
+			<h4 class="h4 my-8">Receive a <strong>10% discount</strong> if you book with us at: <a class="underline hover:text-primary-500" href="mailto:support@villasunbeam.com?subject=Villa%20Sunbeam%20Booking">support@villasunbeam.com</a></h4>
 
 
 			<!-- location -->
