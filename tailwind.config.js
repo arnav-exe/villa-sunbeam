@@ -9,9 +9,27 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}', join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')],
 	theme: {
 		extend: {
+			colors: {
+				cream: '#F9F4EC',
+				terracotta: '#B8692E',
+				gold: {
+					DEFAULT: '#C9973A',
+					light: '#D4A853',
+				},
+				villa: {
+					dark: '#1C1409',
+					mid: '#5A4A32',
+					warm: '#3A2C18',
+					sand: '#E0D0B8',
+				},
+			},
+			fontFamily: {
+				display: ['"Cormorant Garamond"', 'serif'],
+				label: ['Jost', 'sans-serif'],
+			},
 			backgroundImage: {
-				"hero-bg" : "url('src/lib/images/hero-bg.jpg')"
-			}
+				'hero-bg': "url('src/lib/images/hero-bg.jpg')"
+			},
 		},
 	},
 	plugins: [
@@ -19,12 +37,7 @@ export default {
 		typography,
 		skeleton({
 			themes: {
-				preset: [
-					{
-						name: 'wintry',
-						enhancements: true,
-					},
-				],
+				preset: [{ name: 'wintry', enhancements: true }],
 			},
 		}),
 	],
