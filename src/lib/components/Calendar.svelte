@@ -5,7 +5,7 @@
 	export let monthPrices = [];
 
 	let currentDate = new Date();
-	let currentMonth = currentDate.getMonth();
+	let currentMonth = 0;
 	let currentYear = currentDate.getFullYear();
 
 	let daysInMonth = [];
@@ -57,16 +57,17 @@
 		);
 	};
 
-	const updateMonth = (offset) => {
-		currentMonth += offset;
+	const startYear = currentDate.getFullYear();
 
-		if (currentMonth > 11) {
-			currentMonth = 0;
-			currentYear++;
-		} else if (currentMonth < 0) {
-			currentMonth = 11;
-			currentYear--;
-		}
+	const updateMonth = (offset) => {
+		const newMonth = currentMonth + offset;
+		const newYear = newMonth > 11 ? currentYear + 1 : newMonth < 0 ? currentYear - 1 : currentYear;
+		const clampedMonth = newMonth > 11 ? 0 : newMonth < 0 ? 11 : newMonth;
+
+		if (newYear < startYear) return;
+
+		currentMonth = clampedMonth;
+		currentYear = newYear;
 		currentDate = new Date(currentYear, currentMonth, 1);
 		daysInMonth = getDaysInMonth(currentYear, currentMonth);
 	};
@@ -85,6 +86,7 @@
 	});
 
 	$: daysInMonth = getDaysInMonth(currentYear, currentMonth);
+	$: isAtStart = currentMonth === 0 && currentYear === startYear;
 </script>
 
 <div class="p-4 bg-white rounded shadow-lg">
@@ -92,6 +94,7 @@
 		<button
 			on:click={(_) => updateMonth(-1)}
 			type="button"
+			disabled={isAtStart}
 			class="btn px-4 py-2 mr-4 variant-filled">Previous</button
 		>
 
