@@ -7,7 +7,22 @@
 	onMount(() => {
 		const onScroll = () => { scrolled = window.scrollY > 60; };
 		window.addEventListener('scroll', onScroll, { passive: true });
-		return () => window.removeEventListener('scroll', onScroll);
+
+		// intercept anchor clicks and wait for fonts to settle before scrolling to prevent premature scroll stop when google fonts reflow shifts target position
+		const onAnchorClick = (e) => {
+			const anchor = e.target.closest('a[href^="#"]');
+			if (!anchor) return;
+			const target = document.querySelector(anchor.getAttribute('href'));
+			if (!target) return;
+			e.preventDefault();
+			document.fonts.ready.then(() => target.scrollIntoView({ behavior: 'smooth' }));
+		};
+		document.addEventListener('click', onAnchorClick);
+
+		return () => {
+			window.removeEventListener('scroll', onScroll);
+			document.removeEventListener('click', onAnchorClick);
+		};
 	});
 </script>
 
@@ -33,9 +48,7 @@
 		</div>
 
 		<a
-			href="https://www.booking.com/hotel/cy/coral-bay-sunbeam-villa.en-gb.html"
-			target="_blank"
-			rel="noreferrer"
+			href="#book-direct"
 			class="hidden sm:block font-label text-[0.65rem] font-semibold tracking-[0.18em] uppercase bg-gold text-villa-dark px-6 py-[0.65rem] no-underline transition-all duration-200 hover:bg-gold-light hover:-translate-y-px shrink-0"
 		>Book Now</a>
 	</div>

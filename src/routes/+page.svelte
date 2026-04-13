@@ -66,9 +66,7 @@
 		</p>
 		<div class="flex gap-4 justify-center flex-wrap max-w-[480px] mx-auto">
 			<a
-				href="https://www.booking.com/hotel/cy/coral-bay-sunbeam-villa.en-gb.html"
-				target="_blank"
-				rel="noreferrer"
+				href="#book-direct"
 				class="flex-1 text-center whitespace-nowrap font-label font-semibold uppercase no-underline transition-all duration-[250ms] bg-gold text-villa-dark hover:bg-gold-light hover:-translate-y-0.5
 			          text-[0.55rem] tracking-[0.12em] py-[0.55rem] px-4
 			          sm:text-[0.68rem] sm:tracking-[0.18em] sm:py-4 sm:px-9">Reserve Your Stay</a
@@ -104,7 +102,7 @@
 </div>
 
 <!-- about -->
-<section id="about" class="bg-cream">
+<section id="about" class="bg-cream scroll-mt-24">
 	<div class="max-w-[1200px] mx-auto px-8 py-20">
 		<div class="mb-14">
 			<span
@@ -159,18 +157,16 @@
 		<div class="flex items-center gap-8 pt-10 border-t border-villa-sand flex-wrap">
 			<p class="font-display italic text-[1.2rem] text-villa-mid">Ready to experience Cyprus?</p>
 			<a
-				href="https://www.booking.com/hotel/cy/coral-bay-sunbeam-villa.en-gb.html"
-				target="_blank"
-				rel="noreferrer"
+				href="#book-direct"
 				class="inline-block font-label text-[0.68rem] font-semibold tracking-[0.18em] uppercase bg-gold text-villa-dark px-9 py-4 no-underline transition-all duration-[250ms] hover:bg-gold-light hover:-translate-y-0.5"
-				>Book on Booking.com</a
+				>Book Now</a
 			>
 		</div>
 	</div>
 </section>
 
 <!-- gallery -->
-<section id="images" class="bg-villa-dark">
+<section id="images" class="bg-villa-dark scroll-mt-24">
 	<div class="max-w-[1200px] mx-auto px-8 py-20">
 		<div class="text-center mb-14">
 			<span
@@ -187,7 +183,8 @@
 
 <!-- book direct banner -->
 <section
-	class="py-24 px-8 text-center"
+	id="book-direct"
+	class="py-24 px-8 text-center scroll-mt-24"
 	style="background: linear-gradient(135deg, #9E5420 0%, #C4783A 55%, #8B4F20 100%)"
 >
 	<div class="max-w-[700px] mx-auto">
@@ -211,7 +208,7 @@
 </section>
 
 <!-- availability -->
-<section id="availability" class="bg-cream">
+<section id="availability" class="bg-cream scroll-mt-24">
 	<div class="max-w-[1200px] mx-auto px-8 py-20">
 		<div class="text-center mb-14">
 			<span
@@ -237,7 +234,7 @@
 </section>
 
 <!-- location -->
-<section id="location" class="bg-white">
+<section id="location" class="bg-white scroll-mt-24">
 	<div class="max-w-[1200px] mx-auto px-8 py-20">
 		<div class="text-center mb-14">
 			<span
@@ -338,7 +335,7 @@
 		}
 	}
 
-	#about, #images, #availability, #location {
+	#about, #images, #availability, #location, #book-direct {
 		padding-top: 1em;
 	}
 </style>
