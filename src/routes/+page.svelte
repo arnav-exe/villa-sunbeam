@@ -5,7 +5,7 @@
 
 	export let data;
 
-	const origMonthPrices = [
+	const monthPrices = [
 		'-',
 		'-',
 		'-',
@@ -19,11 +19,6 @@
 		'150',
 		'-'
 	];
-	const EURO_DISCOUNT = 15;
-	// pricing after direct-booking discount
-	const monthPrices = origMonthPrices.map((i) =>
-		isNaN(Number(i)) ? i : (Number(i) - EURO_DISCOUNT).toString()
-	);
 
 	const amenities = [
 		{ icon: '🛌', label: '3 Bedrooms' },
