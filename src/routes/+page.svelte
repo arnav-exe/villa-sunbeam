@@ -29,7 +29,7 @@
 </script>
 
 <svelte:head>
-	<title>Villa Sunbeam — Peyia, Cyprus</title>
+	<title>Villa Sunbeam - Coral Bay, Cyprus</title>
 </svelte:head>
 
 <!-- hero -->
@@ -49,7 +49,7 @@
 		class="hero-content relative z-[2] text-center text-white px-6 pt-20 [animation:fade-up_1.2s_ease-out_0.3s_both]"
 	>
 		<p class="font-label text-[0.72rem] font-medium tracking-[0.35em] uppercase text-gold mb-5">
-			Peyia · Cyprus
+			Coral Bay · Cyprus
 		</p>
 		<h1
 			class="font-display text-[clamp(5.5rem,15vw,12rem)] font-medium leading-[0.87] -tracking-[0.02em] mb-6"
@@ -75,13 +75,6 @@
 		</div>
 	</div>
 
-	<div
-		class="scroll-hint absolute bottom-10 left-0 right-0 z-[2] flex flex-col items-center gap-2 text-white/40 font-label text-[0.6rem] tracking-[0.25em] uppercase [animation:fade-up_1s_ease-out_1.8s_both]"
-		aria-hidden="true"
-	>
-		<span>Scroll</span>
-		<div class="scroll-line relative w-px h-14 bg-white/15 overflow-hidden" />
-	</div>
 </section>
 
 <!-- amenities strip -->
@@ -114,7 +107,7 @@
 		<p
 			class="font-display text-[clamp(1.15rem,2.5vw,1.4rem)] leading-[1.75] text-villa-warm max-w-[680px] mb-14"
 		>
-			A charming 3-bedroom retreat nestled in the picturesque town of Peyia, Cyprus. Stunning views
+			A charming 3-bedroom retreat nestled in the picturesque town of Coral Bay, Cyprus. Stunning views
 			of the surrounding landscape, offering a serene escape for up to 6 guests with your own
 			private swimming pool.
 		</p>
@@ -239,7 +232,7 @@
 			<h2
 				class="font-display text-[clamp(2.8rem,6vw,4.8rem)] font-medium leading-none text-villa-dark"
 			>
-				Peyia,<br /><em class="italic text-terracotta">Cyprus</em>
+				Coral Bay,<br /><em class="italic text-terracotta">Cyprus</em>
 			</h2>
 		</div>
 		<iframe
@@ -257,7 +250,7 @@
 <footer class="bg-villa-dark text-center py-14 px-8">
 	<p class="font-display italic text-[1.75rem] text-white mb-1.5">Villa Sunbeam</p>
 	<p class="font-label text-[0.65rem] tracking-[0.2em] uppercase text-white/35 mb-7">
-		Peyia, Paphos, Cyprus
+		Coral Bay, Paphos, Cyprus
 	</p>
 	<div class="flex gap-8 justify-center flex-wrap">
 		<a
@@ -291,40 +284,8 @@
 		}
 	}
 
-	/* bright segment travels down scroll-line track */
-	.scroll-line::after {
-		content: '';
-		position: absolute;
-		top: -18px;
-		left: 0;
-		width: 1px;
-		height: 18px;
-		background: rgba(255, 255, 255, 0.9);
-		animation: scroll-travel 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-	}
-
-	@keyframes scroll-travel {
-		0% {
-			top: -18px;
-			opacity: 0;
-		}
-		25% {
-			opacity: 1;
-		}
-		75% {
-			opacity: 1;
-		}
-		100% {
-			top: 56px;
-			opacity: 0;
-		}
-	}
-
-	/* hide scroll indicator on short viewports — avoids button collision */
+	/* add padding on smaller screens */
 	@media (max-height: 660px) {
-		.scroll-hint {
-			display: none !important;
-		}
 		.hero-content {
 			padding-top: 3rem !important;
 		}
