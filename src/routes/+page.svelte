@@ -5,21 +5,6 @@
 
 	export let data;
 
-	const monthPrices = [
-		'-',
-		'-',
-		'-',
-		'150',
-		'170',
-		'260',
-		'280',
-		'300',
-		'220',
-		'180',
-		'150',
-		'-'
-	];
-
 	const amenities = [
 		{ icon: '🛌', label: '3 Bedrooms' },
 		{ icon: '👥', label: 'Sleeps 6' },
@@ -74,7 +59,6 @@
 			>
 		</div>
 	</div>
-
 </section>
 
 <!-- amenities strip -->
@@ -107,8 +91,8 @@
 		<p
 			class="font-display text-[clamp(1.15rem,2.5vw,1.4rem)] leading-[1.75] text-villa-warm max-w-[680px] mb-14"
 		>
-			A charming 3-bedroom retreat nestled in the picturesque town of Coral Bay, Cyprus. Stunning views
-			of the surrounding landscape, offering a serene escape for up to 6 guests with your own
+			A charming 3-bedroom retreat nestled in the picturesque town of Coral Bay, Cyprus. Stunning
+			views of the surrounding landscape, offering a serene escape for up to 6 guests with your own
 			private swimming pool.
 		</p>
 
@@ -206,11 +190,11 @@
 			<h2
 				class="font-display text-[clamp(2.8rem,6vw,4.8rem)] font-medium leading-none text-villa-dark"
 			>
-				<em class="italic text-terracotta">Availability</em> &amp; Pricing
+				<em class="italic text-terracotta">Availability</em>
 			</h2>
 		</div>
 		<div class="max-w-[700px] mx-auto">
-			<Calendar disabledDates={data.disabledDates} {monthPrices} />
+			<Calendar disabledDates={data.disabledDates} />
 			<div
 				class="flex items-center gap-2 justify-end mt-3 font-label text-[0.75rem] text-villa-mid"
 			>
@@ -291,7 +275,11 @@
 		}
 	}
 
-	#about, #images, #availability, #location, #book-direct {
+	#about,
+	#images,
+	#availability,
+	#location,
+	#book-direct {
 		padding-top: 1em;
 	}
 </style>

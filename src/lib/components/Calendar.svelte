@@ -1,6 +1,5 @@
 <script>
 	export let disabledDates = [];
-	export let monthPrices = [];
 
 	const today = new Date();
 	const startYear = today.getFullYear();
@@ -34,7 +33,8 @@
 					date.getFullYear() === cur.getFullYear() &&
 					date.getMonth() === cur.getMonth() &&
 					date.getDate() === cur.getDate()
-				) return true;
+				)
+					return true;
 				cur.setDate(cur.getDate() + 1);
 			}
 			return false;
@@ -42,9 +42,11 @@
 
 	const isToday = (date) => {
 		const today = new Date();
-		return date.getFullYear() === today.getFullYear() &&
+		return (
+			date.getFullYear() === today.getFullYear() &&
 			date.getMonth() === today.getMonth() &&
-			date.getDate() === today.getDate();
+			date.getDate() === today.getDate()
+		);
 	};
 
 	const updateMonth = (offset) => {
@@ -63,9 +65,19 @@
 
 <div class="p-4 bg-white rounded shadow-lg">
 	<div class="flex justify-between items-center mb-4">
-		<button on:click={() => updateMonth(-1)} type="button" disabled={isAtStart} class="btn px-4 py-2 mr-4 variant-filled">Previous</button>
-		<h3 class="h3 font-bold">{currentDate.toLocaleString('default', { month: 'long' })} {currentYear}</h3>
-		<button on:click={() => updateMonth(1)} type="button" class="btn px-4 py-2 ml-4 variant-filled">Next</button>
+		<button
+			on:click={() => updateMonth(-1)}
+			type="button"
+			disabled={isAtStart}
+			class="btn px-4 py-2 mr-4 variant-filled">Previous</button
+		>
+		<h3 class="h3 font-bold">
+			{currentDate.toLocaleString('default', { month: 'long' })}
+			{currentYear}
+		</h3>
+		<button on:click={() => updateMonth(1)} type="button" class="btn px-4 py-2 ml-4 variant-filled"
+			>Next</button
+		>
 	</div>
 
 	<div class="grid grid-cols-7 gap-4">
@@ -75,11 +87,12 @@
 	</div>
 	<div class="grid grid-cols-7 gap-4">
 		{#each daysInMonth as day}
-			<div class="min-w-[35px] text-[0.75rem] text-center p-1 rounded
+			<div
+				class="min-w-[35px] text-[0.75rem] text-center p-1 rounded
 				{isDisabled(day) ? 'bg-error-100 text-error-500' : 'bg-white'}
-				{isToday(day) ? 'border-2 text-primary-500 border-primary-500' : ''}">
+				{isToday(day) ? 'border-2 text-primary-500 border-primary-500' : ''}"
+			>
 				<div>{day.getDate()}</div>
-				<div class="text-xs sm:text-sm text-gray-500">€{monthPrices[currentMonth]}</div>
 			</div>
 		{/each}
 	</div>
