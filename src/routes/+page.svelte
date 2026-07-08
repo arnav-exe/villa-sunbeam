@@ -118,7 +118,7 @@
 					Dining &amp; Nightlife
 				</h3>
 				<p class="font-label text-[0.875rem] font-light leading-[1.75] text-villa-mid">
-					A short drive from the famous Coral Bay Strip, with a vibrant array of bars and
+					A 2-minute walk from the famous Coral Bay Strip, with a vibrant array of bars and
 					restaurants — from traditional Cypriot dishes to international cuisine.
 				</p>
 			</div>
